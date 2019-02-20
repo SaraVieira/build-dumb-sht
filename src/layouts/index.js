@@ -6,7 +6,9 @@ import Swipeable from 'react-swipeable';
 import Transition from '../components/transition';
 import Chrome from '../components/browser';
 
+import './dm.css';
 import './index.css';
+import './normalize.css';
 
 const Header = ({ name, title, date }) => (
   <header>
@@ -16,6 +18,69 @@ const Header = ({ name, title, date }) => (
     <b>{date}</b>
   </header>
 );
+
+const Text = [
+  {
+    slide: '46',
+    title: 'Is it Raining outside',
+    url: 'https://isitrainingoutsi.de/',
+  },
+  {
+    slide: '48',
+    title: 'PostCSS Caralho',
+    url: 'https://github.com/SaraVieira/postcss-plugin-caralho',
+  },
+  {
+    slide: '50',
+    title: 'Babel Plugin Caralho',
+    url: 'https://github.com/SaraVieira/babel-plugin-caralho',
+  },
+  {
+    slide: '52',
+    title: 'Magic Piano',
+    url: 'https://magicpiano.now.sh',
+  },
+  {
+    slide: '53',
+    title: 'Magic Drums',
+    url: 'https://magicdrums.now.sh',
+  },
+  {
+    slide: '55',
+    title: 'Meme',
+    url: 'http://meme.iamsaravieira.com',
+  },
+  {
+    slide: '57',
+    title: 'BURNITDOWN',
+    url: 'https://github.com/SaraVieira/BURNITDOWN',
+  },
+  {
+    slide: '59',
+    title: 'Mother CLI',
+    url: 'https://github.com/SaraVieira/mother',
+  },
+  {
+    slide: '61',
+    title: 'NPM Drinking Game',
+    url: 'https: //npmdrinkinggame.party',
+  },
+  {
+    slide: '62',
+    title: 'Make Frontend Shit Again',
+    url: 'http://makefrontendshitagain.party',
+  },
+  {
+    slide: null,
+    title: 'Build Dumb Shit',
+    url: 'https://builddumbshit.wtf',
+  },
+];
+
+const getText = path => {
+  const text = Text.find(t => path.includes(t.slide));
+  return text || Text.find(t => t.slide === null);
+};
 
 class TemplateWrapper extends Component {
   NEXT = [13, 32, 39];
@@ -56,7 +121,7 @@ class TemplateWrapper extends Component {
 
   render() {
     const { location, children, site } = this.props;
-
+    const slide = location.pathname;
     return (
       <div>
         <Helmet
@@ -72,7 +137,7 @@ class TemplateWrapper extends Component {
           onSwipedRight={this.swipeRight}
         >
           <div className="chrome">
-            <Chrome className="chrome-window">
+            <Chrome title={getText(slide)} className="chrome-window">
               <Transition location={location}>
                 <div id="slide">{children}</div>
               </Transition>

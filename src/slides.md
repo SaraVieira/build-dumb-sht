@@ -2,7 +2,7 @@
 
 ---
 
-# Build Dumb Sh\*t
+# Build Dumb Sh*t
 
 ---
 
@@ -58,40 +58,49 @@
 
 ---
 
-## "Useless is not worthless" - @devdevcharlie
+# "Useless is not worthless" - [@devdevcharlie](https://twitter.com/devdevcharlie)
 
 ---
 
-## Why we build things?
+# Why do we build things?
 
 ---
 
-  Because they will change the world
-  Because they will make us rich
-  Because they will help us learn
+### Because they will change the world
 
 ---
 
-## Because they will change the world
+### Because they will change the world
+### Because they will make us rich
 
 ---
 
-## Is that even good?
+### Because they will change the world
+### Because they will make us rich
+### Because they will help us learn
 
 ---
 
-<img width="200px" src="./assets/uber.svg" />
+# Because they will change the world
+
+---
+
+# Is that even good?
+
+---
+
+<img width="400px" src="./assets/uber.svg" />
 
 ---
 
 # Did uber make the world a better place?
 
 ---
-Depends on who you ask
+## Depends on who you ask
 
 ---
 
-<img src="./assets/airbnb.svg" />
+<img width="500" style=" height: auto;" src="./assets/airbnb.png" />
 
 ---
 
@@ -99,17 +108,19 @@ Depends on who you ask
 
 ---
 
-Depends on who you ask
+## Depends on who you ask
 
 ---
 
-<img src="./assets/spotify.png" />
+<img width="500" style=" height: auto;" src="./assets/spotify.png" />
 
 ---
 
 # Did Spotify make the world a better place?
 ---
-  # YES
+
+# YES 🎉
+### Spotify is love
 
 ---
 
@@ -145,6 +156,9 @@ Depends on who you ask
 
 ---
 
+#  NEXT
+---
+
 # Because they will help us learn
 
 ---
@@ -157,7 +171,7 @@ Depends on who you ask
 
 ---
 
-# i have learned so much by making dumb things
+# I have learned so much by making dumb things
 
 ---
 
@@ -165,17 +179,13 @@ Depends on who you ask
 
 ---
 
-### https://isitrainingoutsi.de
-
-<img src="./assets/raining.png" />
+<iframe src="https://isitrainingoutsi.de" allow="geolocation"/>
 
 ---
 
 # I wanted to learn how to make postCSS plugins
 
 ---
-
-https://github.com/SaraVieira/postcss-caralho
 
 <img src="./assets/postcss.png" />
 
@@ -185,8 +195,6 @@ https://github.com/SaraVieira/postcss-caralho
 
 ---
 
-https://github.com/SaraVieira/babel-plugin-caralho
-
 <img src="./assets/babel.png" />
 
 ---
@@ -195,13 +203,9 @@ https://github.com/SaraVieira/babel-plugin-caralho
 
 ---
 
-### https://magicpiano.now.sh
-
 <img src="./assets/piano.png" />
 
 ---
-
-### https://magicdrums.now.sh
 
 <img src="./assets/drums.png" />
 
@@ -211,8 +215,6 @@ https://github.com/SaraVieira/babel-plugin-caralho
 
 ---
 
-### http://meme.iamsaravieira.com
-
 <img src="./assets/meme.png" />
 
 ---
@@ -220,8 +222,6 @@ https://github.com/SaraVieira/babel-plugin-caralho
 # Chrome extensions
 
 ---
-
-### https://github.com/SaraVieira/BURNITDOWN
 
 <img src="./assets/chrome.png" />
 
@@ -231,8 +231,6 @@ https://github.com/SaraVieira/babel-plugin-caralho
 
 ---
 
-### https://github.com/SaraVieira/mother
-
 <img src="./assets/cli.png" />
 
 ---
@@ -241,13 +239,9 @@ https://github.com/SaraVieira/babel-plugin-caralho
 
 ---
 
-### https://npmdrinkinggame.party
-
 <img src="./assets/npm.png" />
 
 ---
-
-### http://makefrontendshitagain.party
 
 <img src="./assets/shit.png" />
 
@@ -305,8 +299,6 @@ https://github.com/SaraVieira/babel-plugin-caralho
 
 ---
 
-<Image src="./assets/yay.jpg" />
+# Thank You 🇦🇹
 
-# Thank You 🇩🇪
-
-### [https://build-dumb-shit.netlify.com/](https://build-dumb-shit.netlify.com/)
+## [https://builddumbshit.wtf](https://builddumbshit.wtf)

@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
-export default ({ children, ...props }) => (
+export default ({ children, title, ...props }) => (
   <div>
     <svg
       xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -83,7 +83,7 @@ export default ({ children, ...props }) => (
               fontWeight={400}
             >
               <tspan x={27} y={18}>
-                https://builddumbshit.wtf
+                {title.url}
               </tspan>
             </text>
             <path
@@ -126,7 +126,7 @@ export default ({ children, ...props }) => (
               fontWeight={400}
             >
               <tspan x={23} y={14}>
-                Build Dumb Shit
+                {title.title}
               </tspan>
             </text>
             <text
