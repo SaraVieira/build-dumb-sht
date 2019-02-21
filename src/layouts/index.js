@@ -21,52 +21,57 @@ const Header = ({ name, title, date }) => (
 
 const Text = [
   {
-    slide: '46',
+    slide: '15',
+    title: 'Component Did Smoosh',
+    url: 'https://smoosh.fun',
+  },
+  {
+    slide: '47',
     title: 'Is it Raining outside',
     url: 'https://isitrainingoutsi.de/',
   },
   {
-    slide: '48',
+    slide: '49',
     title: 'PostCSS Caralho',
     url: 'https://github.com/SaraVieira/postcss-plugin-caralho',
   },
   {
-    slide: '50',
+    slide: '51',
     title: 'Babel Plugin Caralho',
     url: 'https://github.com/SaraVieira/babel-plugin-caralho',
   },
   {
-    slide: '52',
+    slide: '53',
     title: 'Magic Piano',
     url: 'https://magicpiano.now.sh',
   },
   {
-    slide: '53',
+    slide: '54',
     title: 'Magic Drums',
     url: 'https://magicdrums.now.sh',
   },
   {
-    slide: '55',
+    slide: '56',
     title: 'Meme',
     url: 'http://meme.iamsaravieira.com',
   },
   {
-    slide: '57',
+    slide: '58',
     title: 'BURNITDOWN',
     url: 'https://github.com/SaraVieira/BURNITDOWN',
   },
   {
-    slide: '59',
+    slide: '60',
     title: 'Mother CLI',
     url: 'https://github.com/SaraVieira/mother',
   },
   {
-    slide: '61',
+    slide: '62',
     title: 'NPM Drinking Game',
     url: 'https: //npmdrinkinggame.party',
   },
   {
-    slide: '62',
+    slide: '63',
     title: 'Make Frontend Shit Again',
     url: 'http://makefrontendshitagain.party',
   },

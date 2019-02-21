@@ -2,7 +2,7 @@
 
 ---
 
-# Build Dumb Sh*t
+# 🛠 Build Dumb Sh*t 💩
 
 ---
 
@@ -51,6 +51,10 @@
 ---
 
 # I am part of a JavaScript comedy club
+
+---
+
+<img src="./assets/smoosh.png" />
 
 ---
 
@@ -141,6 +145,7 @@
 ---
 
 ### Mic drop
+# 🎤
 
 ---
 
