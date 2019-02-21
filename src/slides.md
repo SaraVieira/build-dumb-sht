@@ -184,7 +184,7 @@
 
 ---
 
-<iframe src="https://isitrainingoutsi.de" allow="geolocation"/>
+<img src="./assets/raining.png" />
 
 ---
 
