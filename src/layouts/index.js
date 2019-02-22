@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Link, navigate, StaticQuery, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
@@ -33,7 +33,7 @@ const Text = [
   {
     slide: '49',
     title: 'PostCSS Caralho',
-    url: 'https://github.com/SaraVieira/postcss-plugin-caralho',
+    url: 'https://github.com/SaraVieira/postcss-caralho',
   },
   {
     slide: '51',
@@ -103,15 +103,15 @@ class TemplateWrapper extends Component {
     const now = this.props.data.slide.index;
     const slidesLength = this.props.slidesLength;
 
-    if (now) {
+    if (now && location.pathname.includes('/slides/')) {
       if (keyCode === this.PREV && now === 1) {
         return false;
       } else if (this.NEXT.indexOf(keyCode) !== -1 && now === slidesLength) {
         return false;
       } else if (this.NEXT.indexOf(keyCode) !== -1) {
-        navigate(`/${now + 1}`);
+        navigate(`/slides/${now + 1}`);
       } else if (keyCode === this.PREV) {
-        navigate(`/${now - 1}`);
+        navigate(`/slides/${now - 1}`);
       }
     }
   };
@@ -127,28 +127,35 @@ class TemplateWrapper extends Component {
   render() {
     const { location, children, site } = this.props;
     const slide = location.pathname;
+    const isSlides = location.pathname.includes('/slides/');
     return (
       <div>
-        <Helmet
-          title={`${site.siteMetadata.title} — ${site.siteMetadata.name}`}
-        />
-        <Header
-          name={site.siteMetadata.name}
-          title={site.siteMetadata.title}
-          date={site.siteMetadata.date}
-        />
-        <Swipeable
-          onSwipedLeft={this.swipeLeft}
-          onSwipedRight={this.swipeRight}
-        >
-          <div className="chrome">
-            <Chrome title={getText(slide)} className="chrome-window">
-              <Transition location={location}>
-                <div id="slide">{children}</div>
-              </Transition>
-            </Chrome>
-          </div>
-        </Swipeable>
+        <Helmet title={`Build Dumb Shit 💩`} />
+
+        {isSlides ? (
+          <Fragment>
+            <Header
+              name={site.siteMetadata.name}
+              title={site.siteMetadata.title}
+              date={site.siteMetadata.date}
+            />
+
+            <Swipeable
+              onSwipedLeft={this.swipeLeft}
+              onSwipedRight={this.swipeRight}
+            >
+              <div className="chrome">
+                <Chrome title={getText(slide)} className="chrome-window">
+                  <Transition location={location}>
+                    <div id="slide">{children}</div>
+                  </Transition>
+                </Chrome>
+              </div>
+            </Swipeable>
+          </Fragment>
+        ) : (
+          children
+        )}
       </div>
     );
   }

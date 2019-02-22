@@ -38,11 +38,11 @@
 
 ---
 
-<img src="./assets/idiot1.jpg" />
+<img src="../assets/idiot1.jpg" />
 
 ---
 
-<img src="./assets/idiot2.gif" />
+<img src="../assets/idiot2.gif" />
 
 ---
 
@@ -54,7 +54,7 @@
 
 ---
 
-<img src="./assets/smoosh.png" />
+<img src="../assets/smoosh.png" />
 
 ---
 
@@ -93,7 +93,7 @@
 
 ---
 
-<img width="400px" src="./assets/uber.svg" />
+<img width="400px" src="../assets/uber.svg" />
 
 ---
 
@@ -104,7 +104,7 @@
 
 ---
 
-<img width="500" style=" height: auto;" src="./assets/airbnb.png" />
+<img width="500" style=" height: auto;" src="../assets/airbnb.png" />
 
 ---
 
@@ -116,7 +116,7 @@
 
 ---
 
-<img width="500" style=" height: auto;" src="./assets/spotify.png" />
+<img width="500" style=" height: auto;" src="../assets/spotify.png" />
 
 ---
 
@@ -172,7 +172,7 @@
 
 ---
 
-<img src="./assets/todo.png" />
+<img src="../assets/todo.png" />
 
 ---
 
@@ -184,7 +184,7 @@
 
 ---
 
-<img src="./assets/raining.png" />
+<img src="../assets/raining.png" />
 
 ---
 
@@ -192,7 +192,7 @@
 
 ---
 
-<img src="./assets/postcss.png" />
+<img src="../assets/postcss.png" />
 
 ---
 
@@ -200,7 +200,7 @@
 
 ---
 
-<img src="./assets/babel.png" />
+<img src="../assets/babel.png" />
 
 ---
 
@@ -208,11 +208,11 @@
 
 ---
 
-<img src="./assets/piano.png" />
+<img src="../assets/piano.png" />
 
 ---
 
-<img src="./assets/drums.png" />
+<img src="../assets/drums.png" />
 
 ---
 
@@ -220,7 +220,7 @@
 
 ---
 
-<img src="./assets/meme.png" />
+<img src="../assets/meme.png" />
 
 ---
 
@@ -228,7 +228,7 @@
 
 ---
 
-<img src="./assets/chrome.png" />
+<img src="../assets/chrome.png" />
 
 ---
 
@@ -236,7 +236,7 @@
 
 ---
 
-<img src="./assets/cli.png" />
+<img src="../assets/cli.png" />
 
 ---
 
@@ -244,11 +244,11 @@
 
 ---
 
-<img src="./assets/npm.png" />
+<img src="../assets/npm.png" />
 
 ---
 
-<img src="./assets/shit.png" />
+<img src="../assets/shit.png" />
 
 ---
 

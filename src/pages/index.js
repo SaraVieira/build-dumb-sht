@@ -1,13 +1,22 @@
-import React, { Component } from 'react';
-import { navigate } from 'gatsby';
+import React, { useEffect, useState } from 'react';
+import urls from '../websites';
 
-class Index extends Component {
-  componentDidMount() {
-    navigate(`/1`, { replace: true });
-  }
-  render() {
-    return <div />;
-  }
-}
+const getData = async () => {
+  const results = urls.map(async url => {
+    const f = await fetch(`https://open-data-api.now.sh/?url=${url}`);
+    const data = await f.json();
+    return data;
+  });
+  const a = await Promise.all(results);
+  return a;
+};
 
-export default Index;
+export default () => {
+  const [websites, setWebsites] = useState(null);
+
+  useEffect(() => {
+    getData().then(a => setWebsites(a));
+  }, []);
+
+  return <div>{websites && websites.map(website => website.title)}</div>;
+};
