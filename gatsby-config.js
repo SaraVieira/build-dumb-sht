@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     name: `Sara Vieira`,
-    title: `AgentConf 🇦🇹`,
+    title: `Build Dumb Shit`,
     date: `@NikkitaFTW`,
   },
   plugins: [

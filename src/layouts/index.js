@@ -102,16 +102,16 @@ class TemplateWrapper extends Component {
   navigate = ({ keyCode }) => {
     const now = this.props.data.slide.index;
     const slidesLength = this.props.slidesLength;
-
-    if (now && location.pathname.includes('/slides/')) {
+    // eslint-disable-next-line no-restricted-globals
+    if (now) {
       if (keyCode === this.PREV && now === 1) {
         return false;
       } else if (this.NEXT.indexOf(keyCode) !== -1 && now === slidesLength) {
         return false;
       } else if (this.NEXT.indexOf(keyCode) !== -1) {
-        navigate(`/slides/${now + 1}`);
+        navigate(`/${now + 1}`);
       } else if (keyCode === this.PREV) {
-        navigate(`/slides/${now - 1}`);
+        navigate(`/${now - 1}`);
       }
     }
   };
@@ -127,35 +127,29 @@ class TemplateWrapper extends Component {
   render() {
     const { location, children, site } = this.props;
     const slide = location.pathname;
-    const isSlides = location.pathname.includes('/slides/');
     return (
       <div>
         <Helmet title={`Build Dumb Shit 💩`} />
+        <Fragment>
+          <Header
+            name={site.siteMetadata.name}
+            title={site.siteMetadata.title}
+            date={site.siteMetadata.date}
+          />
 
-        {isSlides ? (
-          <Fragment>
-            <Header
-              name={site.siteMetadata.name}
-              title={site.siteMetadata.title}
-              date={site.siteMetadata.date}
-            />
-
-            <Swipeable
-              onSwipedLeft={this.swipeLeft}
-              onSwipedRight={this.swipeRight}
-            >
-              <div className="chrome">
-                <Chrome title={getText(slide)} className="chrome-window">
-                  <Transition location={location}>
-                    <div id="slide">{children}</div>
-                  </Transition>
-                </Chrome>
-              </div>
-            </Swipeable>
-          </Fragment>
-        ) : (
-          children
-        )}
+          <Swipeable
+            onSwipedLeft={this.swipeLeft}
+            onSwipedRight={this.swipeRight}
+          >
+            <div className="chrome">
+              <Chrome title={getText(slide)} className="chrome-window">
+                <Transition location={location}>
+                  <div id="slide">{children}</div>
+                </Transition>
+              </Chrome>
+            </div>
+          </Swipeable>
+        </Fragment>
       </div>
     );
   }
