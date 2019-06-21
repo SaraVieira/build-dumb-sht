@@ -312,6 +312,6 @@
 
 ---
 
-# Thank You 🇦🇹
+# Thank You
 
 ## [https://builddumbshit.wtf](https://builddumbshit.wtf)
