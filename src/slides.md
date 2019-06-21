@@ -240,6 +240,14 @@
 
 ---
 
+# React Hooks
+
+---
+
+<img src="../assets/clippy.png" />
+
+---
+
 # Sometimes I just wanna make fun of our world
 
 ---

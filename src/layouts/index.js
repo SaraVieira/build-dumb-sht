@@ -66,15 +66,17 @@ const Text = [
     url: 'https://github.com/SaraVieira/mother',
   },
   {
-    slide: '62',
+    slide: '63',
     title: 'NPM Drinking Game',
     url: 'https: //npmdrinkinggame.party',
   },
   {
-    slide: '63',
+    slide: '64',
     title: 'Make Frontend Shit Again',
     url: 'http://makefrontendshitagain.party',
   },
+  { slide: '62', title: 'UseClippy', url: 'https://use-clippy.netlify.com/' },
+
   {
     slide: null,
     title: 'Build Dumb Shit',
