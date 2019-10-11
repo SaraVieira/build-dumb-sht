@@ -21,61 +21,71 @@ const Header = ({ name, title, date }) => (
 
 const Text = [
   {
-    slide: '15',
-    title: 'Component Did Smoosh',
+    slide: '19',
+    title: 'useSmoosh',
     url: 'https://smoosh.fun',
   },
   {
-    slide: '47',
+    slide: '28',
+    title: 'Uber',
+    url: 'https://uber.com',
+  },
+  {
+    slide: '34',
+    title: 'Ikea',
+    url: 'https://www.ikea.com/',
+  },
+  {
+    slide: '31',
+    title: 'Airbnb',
+    url: 'https://airbnb.com',
+  },
+  {
+    slide: '55',
     title: 'Is it Raining outside',
     url: 'https://isitrainingoutsi.de/',
   },
   {
-    slide: '49',
+    slide: '57',
     title: 'PostCSS Caralho',
     url: 'https://github.com/SaraVieira/postcss-caralho',
   },
   {
-    slide: '51',
+    slide: '59',
     title: 'Babel Plugin Caralho',
     url: 'https://github.com/SaraVieira/babel-plugin-caralho',
   },
   {
-    slide: '53',
+    slide: '61',
     title: 'Magic Piano',
     url: 'https://magicpiano.now.sh',
   },
   {
-    slide: '54',
+    slide: '62',
     title: 'Magic Drums',
     url: 'https://magicdrums.now.sh',
   },
   {
-    slide: '56',
-    title: 'Meme',
-    url: 'http://meme.iamsaravieira.com',
-  },
-  {
-    slide: '58',
+    slide: '64',
     title: 'BURNITDOWN',
     url: 'https://github.com/SaraVieira/BURNITDOWN',
   },
   {
-    slide: '60',
+    slide: '66',
     title: 'Mother CLI',
     url: 'https://github.com/SaraVieira/mother',
   },
   {
-    slide: '63',
+    slide: '70',
     title: 'NPM Drinking Game',
     url: 'https: //npmdrinkinggame.party',
   },
   {
-    slide: '64',
+    slide: '71',
     title: 'Make Frontend Shit Again',
     url: 'http://makefrontendshitagain.party',
   },
-  { slide: '62', title: 'UseClippy', url: 'https://use-clippy.netlify.com/' },
+  { slide: '68', title: 'UseClippy', url: 'https://use-clippy.netlify.com/' },
 
   {
     slide: null,

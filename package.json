@@ -41,7 +41,7 @@
   "scripts": {
     "now-build": "npm run build",
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "start": "gatsby develop",
     "format": "prettier --write \"src/**/*.js\""
   },
   "devDependencies": {
